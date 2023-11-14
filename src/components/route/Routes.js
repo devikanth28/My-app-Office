@@ -31,6 +31,7 @@ import UseMemoExample from '../usememowithYT/UseMemoExample';
 import TestIsAuthenticatedOrNot from '../../hoc/TestIsAuthenticatedOrNot';
 import RegAndLogin from '../../shiva/RegAndLogin';
 import PromiseExample from '../PromiseExample';
+import AddressCard from '../AddressCard';
 const RoutesFile = () => {
     const HocFeatching =  ()=><WithDataFeatching/>
   return (
@@ -66,6 +67,7 @@ const RoutesFile = () => {
         <Route exact path="/isAuthenticate" element={<TestIsAuthenticatedOrNot/>}/>
         <Route exact path="/regAndLogin" element={<RegAndLogin/>}/>
         <Route exact path='/promise' element={<PromiseExample/>}/>
+        <Route exact path='/addressCard' element={<AddressCard/>}/>
     </Routes>
     </Router>
   )
