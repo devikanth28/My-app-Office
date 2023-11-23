@@ -32,6 +32,8 @@ import TestIsAuthenticatedOrNot from '../../hoc/TestIsAuthenticatedOrNot';
 import RegAndLogin from '../../shiva/RegAndLogin';
 import PromiseExample from '../PromiseExample';
 import AddressCard from '../AddressCard';
+import ReactDataGrid from '../datagrid/ReactDataGrid';
+import ValidateForm from '../../customHook/ValidateForm';
 const RoutesFile = () => {
     const HocFeatching =  ()=><WithDataFeatching/>
   return (
@@ -68,6 +70,8 @@ const RoutesFile = () => {
         <Route exact path="/regAndLogin" element={<RegAndLogin/>}/>
         <Route exact path='/promise' element={<PromiseExample/>}/>
         <Route exact path='/addressCard' element={<AddressCard/>}/>
+        <Route exact path="/dataGrid" element={<ReactDataGrid/>}/>
+        <Route exact path='/validateForm' element={<ValidateForm/>}/>
     </Routes>
     </Router>
   )

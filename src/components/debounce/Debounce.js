@@ -5,11 +5,11 @@ const Debounce = () => {
 
   useEffect(() => {
       const debounceTimer = setTimeout(() => {
-          // Handle API call or any other task with inputValue
+          
           console.log(inputValue);
-      }, 1000); // Debounce time of 1 second
-
+      }, 1000); 
       return () => {
+          console.log("debounceTimer", debounceTimer)
           clearTimeout(debounceTimer);
       };
   }, [inputValue]);
