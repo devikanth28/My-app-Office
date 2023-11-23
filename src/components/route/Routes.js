@@ -34,6 +34,7 @@ import PromiseExample from '../PromiseExample';
 import AddressCard from '../AddressCard';
 import ReactDataGrid from '../datagrid/ReactDataGrid';
 import ValidateForm from '../../customHook/ValidateForm';
+import Pagination from '../pagination/Pagination';
 const RoutesFile = () => {
     const HocFeatching =  ()=><WithDataFeatching/>
   return (
@@ -72,6 +73,7 @@ const RoutesFile = () => {
         <Route exact path='/addressCard' element={<AddressCard/>}/>
         <Route exact path="/dataGrid" element={<ReactDataGrid/>}/>
         <Route exact path='/validateForm' element={<ValidateForm/>}/>
+        <Route exact path='/pagination' element={<Pagination/>}/>
     </Routes>
     </Router>
   )
