@@ -88,9 +88,9 @@ const p3 = new Promise((resolve, reject) =>{
 
 })
 
-Promise.all([p1,p2,p3]).then(res => console.log("RESSSSSSSS",res))
-Promise.allSettled([p1,p2,p3]).then(res => console.log("RESSSSSSSS",res))
-Promise.race([p1,p2,p3]).then(res => console.log("RESSSSSSSS",res))
+Promise.all([p1,p2,p3]).then(res => console.log("RESSSSSSSSAll",res))
+Promise.allSettled([p1,p2,p3]).then(res => console.log("RESSSSSSSSAllSettled",res))
+Promise.race([p1,p2,p3]).then(res => console.log("RESSSSSSSSRace",res))
 
   return (
     <div>

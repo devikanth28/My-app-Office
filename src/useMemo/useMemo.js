@@ -12,14 +12,14 @@ const UseMemoHook = () => {
     
     },[count])
     const filteredData  = useMemo(()=>{
-        console.log("eeeeee",count);
+        console.log("useMemo",count);
         console.log(Date.now());
         return  Date.now();
     },[count])
  
 
     const filteredData1  = useEffect(()=>{
-        console.log("eeeeee",count)
+        console.log("useEffect",count)
         const data = Date.now();
         console.log(Date.now());
     },[count])
@@ -29,6 +29,7 @@ const UseMemoHook = () => {
     return (
       <>
       {count}
+      {console.log("return is executing")}
       <p>filteredData,{filteredData}</p>
       <p>filteredData1{filteredData1}</p>
      
