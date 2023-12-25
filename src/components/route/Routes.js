@@ -36,6 +36,10 @@ import ReactDataGrid from '../datagrid/ReactDataGrid';
 import ValidateForm from '../../customHook/ValidateForm';
 import Pagination from '../pagination/Pagination';
 import Task from '../../Task';
+import CounterWithSetInterval from '../CounterWithSetInterval';
+import MovieSearch from '../MovieSearch';
+import Home from '../employeedatabasemanagement/Home';
+import CountdownTimer from '../countdowntimer/CountDownTimer';
 const RoutesFile = () => {
     const HocFeatching =  ()=><WithDataFeatching/>
   return (
@@ -76,6 +80,10 @@ const RoutesFile = () => {
         <Route exact path='/validateForm' element={<ValidateForm/>}/>
         <Route exact path='/pagination' element={<Pagination/>}/>
         <Route exact path ="/task" element={<Task/>}/>
+        <Route exact path="/counterWithSetInterval" element={<CounterWithSetInterval/>}/>
+        <Route exact path="/movieSearch" element={<MovieSearch/>}/>
+        <Route exact path="/employeeManagement" element={<Home/>}/>
+        <Route exact path='/countDown' element={<CountdownTimer/>}/>
     </Routes>
     </Router>
   )
