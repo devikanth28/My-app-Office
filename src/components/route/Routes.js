@@ -43,6 +43,8 @@ import CountdownTimer from '../countdowntimer/CountDownTimer';
 import FileExplorer from '../FileExplorer';
 import HocWithLoading from '../../hoc/HocWithLoading';
 import HocWithData from '../../hoc/HocWithData';
+import Users from '../dynamicrouting/Users';
+import EachUser from '../dynamicrouting/EachUser';
 const RoutesFile = () => {
     const HocFeatching =  ()=><WithDataFeatching/>
   return (
@@ -90,6 +92,8 @@ const RoutesFile = () => {
         <Route exact path="/fileExplorer" element={<FileExplorer/>}/>
         <Route exact path="/hocWithLoading" element={<HocWithLoading/>}/>
         <Route exact path="/hocWithData" element={<HocWithData/>}/>
+        <Route exact path="/users" element={<Users/>}/>
+        <Route exact path='/eachUser/:userId' element={<EachUser/>}/>
     </Routes>
     </Router>
   )
