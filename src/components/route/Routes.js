@@ -40,6 +40,9 @@ import CounterWithSetInterval from '../CounterWithSetInterval';
 import MovieSearch from '../MovieSearch';
 import Home from '../employeedatabasemanagement/Home';
 import CountdownTimer from '../countdowntimer/CountDownTimer';
+import FileExplorer from '../FileExplorer';
+import HocWithLoading from '../../hoc/HocWithLoading';
+import HocWithData from '../../hoc/HocWithData';
 const RoutesFile = () => {
     const HocFeatching =  ()=><WithDataFeatching/>
   return (
@@ -84,6 +87,9 @@ const RoutesFile = () => {
         <Route exact path="/movieSearch" element={<MovieSearch/>}/>
         <Route exact path="/employeeManagement" element={<Home/>}/>
         <Route exact path='/countDown' element={<CountdownTimer/>}/>
+        <Route exact path="/fileExplorer" element={<FileExplorer/>}/>
+        <Route exact path="/hocWithLoading" element={<HocWithLoading/>}/>
+        <Route exact path="/hocWithData" element={<HocWithData/>}/>
     </Routes>
     </Router>
   )
